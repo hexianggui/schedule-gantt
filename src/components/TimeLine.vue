@@ -1,63 +1,11 @@
 <script setup lang="ts">
-import { CellDto, ColumnDto } from './gantt.model';
-import { cellValue, columData, columWidthXp, rightColumWidthXp } from './gantt'
+import { columData, columWidthXp, rightColumWidthXp } from './gantt'
 import { onMounted } from 'vue'
-import dayjs from 'dayjs'
 
-// defineProps<TimeLineOption>({
-
-// })
-const weeks = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
-// const props = withDefaults(defineProps<TimeLineOption>(), {
-//     model: 'Hour',
-//     startTime: new Date('2023-11-01'),
-//     endtTime: new Date('2023-12-01')
-// })
-// const maxValue = props.endtTime.valueOf() / 1000 - props.startTime.valueOf() / 1000;
-
-// const dayDatas = ref<{ title: string, subTitle?: string, startValue: number, time: Dayjs, cells: any[] }[]>([])
-//开始时间
-const startTime = dayjs('2023-11-01');
-//结束时间
-const endtTime = dayjs('2023-12-01');
-// const outercolumns = ref<ColumnDto[]>([])
-const getAllDayData = () => {
-    const startDay = dayjs(startTime.format("YYYY-MM-DD"))
-    const endDay = dayjs(endtTime.format("YYYY-MM-DD"))
-    let cellday = startDay;
-    const _colums: ColumnDto[] = []
-    while (cellday <= endDay) {
-        const col: ColumnDto = {
-            title: cellday.format("YYYY-MM-DD"),
-            time: cellday,
-            // items: [],
-            subTitle: weeks[cellday.day()],
-            startValue: cellday.valueOf() / 1000,
-            duration: 86400,
-        }
-        const cells: CellDto[] = []
-        for (let i = 0; i < 24; i++) {
-            const celltime = cellday.add(i, 'hour')
-            cells.push({
-                title: celltime.format("HH:mm"),
-                time: celltime,
-                subTitle: '',
-                startValue: celltime.valueOf() / 1000,
-                duration: cellValue.value,
-            })
-        }
-        col.cells = cells
-        _colums.push(col)
-        cellday = cellday.add(1, 'day')
-    }
-    columData.value = _colums
-}
 onMounted(() => {
     console.log('rightCellWidthxp',rightColumWidthXp.value)
-    getAllDayData()
+    // getAllDayData()
 })
-// console.log(maxValue)
-// const count = ref(0)
 </script>
 
 <template>
@@ -121,10 +69,9 @@ onMounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 36px;
     border-right: 1px solid #D5D9DC;
-
+    border-bottom: 2px solid #9aa0a5;
 }
 
 .gantt-cell {

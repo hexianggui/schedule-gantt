@@ -55,5 +55,367 @@
     { "code": "SMW02", "name": "慢走丝" },
     { "code": "CNC00", "name": "电脑锣编程" },
     { "code": "CNC11", "name": "电脑锣编程" }
+  ],
+  "calendar": [
+    {
+      "date": "2023-10-01",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-02",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-03",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-04",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-05",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-06",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-07",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-08",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-09",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-10",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-11",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-12",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-13",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-14",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-15",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-16",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-17",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-18",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-19",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-20",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-21",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-22",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-23",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-24",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-25",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-26",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-27",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-28",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-29",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-30",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-10-31",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-01",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-02",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-03",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-04",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-05",
+      "isDayOff": true,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-06",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-07",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-08",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    },
+    {
+      "date": "2023-11-09",
+      "isDayOff": false,
+      "items": [
+        { "name": "上午", "start": 28800, "end": 43200 },
+        { "name": "下午", "start": 48600, "end": 63000 },
+        { "name": "晚上", "start": 64800, "end": 72000 }
+      ]
+    }
   ]
 }
