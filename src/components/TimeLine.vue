@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { CellDto, ColumnDto } from './gantt.model';
-import { cellValue, columData } from './gantt'
+import { cellValue, columData, columWidthXp, rightColumWidthXp } from './gantt'
 import { onMounted } from 'vue'
 import dayjs from 'dayjs'
 
@@ -53,7 +53,7 @@ const getAllDayData = () => {
     columData.value = _colums
 }
 onMounted(() => {
-    console.log(1231)
+    console.log('rightCellWidthxp',rightColumWidthXp.value)
     getAllDayData()
 })
 // console.log(maxValue)
@@ -128,11 +128,11 @@ onMounted(() => {
 }
 
 .gantt-cell {
-    width: 80px;
+    width: v-bind(columWidthXp);
 }
 
 .time-line-bottom-cell-last {
     border-right: none;
-    width: 79px;
+    width: v-bind(rightColumWidthXp);
 }
 </style>

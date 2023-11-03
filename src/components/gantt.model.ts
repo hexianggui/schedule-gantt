@@ -8,6 +8,9 @@ export interface TimeLineOption {
   startTime: Date;
   endtTime: Date;
 }
+/**
+ * 行数据对象
+ */
 export interface RowDto {
   code: string;
   name: string;
@@ -15,22 +18,21 @@ export interface RowDto {
   [key: string]: any;
 }
 
-// export interface BigColumnDto extends ColumnDto {
-//   items: ColumnDto[];
-// }
-
+/**
+ * 列数据对象
+ */
 export interface ColumnDto extends CellDto {
   title: string;
   subTitle?: string;
   cells?: CellDto[];
 }
+/**
+ * 单元格数据对象
+ */
 export interface CellDto {
-  // title?: string;
-  // subTitle?: string;
   startValue: number;
   endValue?: number;
   duration: number;
   time: Dayjs;
   [key: string]: any;
 }
-// { title: string, subTitle?: string, startValue: number, time: Dayjs, cells: any[] }

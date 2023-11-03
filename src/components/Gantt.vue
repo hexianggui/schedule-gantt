@@ -1,10 +1,10 @@
 <script setup lang="ts">
 // import { ref } from 'vue'
-import { onMounted, ref } from 'vue';
+import { onMounted } from 'vue';
 import TimeLine from './TimeLine.vue';
 import { CellDto, RowDto } from './gantt.model';
 import tempdata from './temData.json'
-import { columData, rowData } from './gantt';
+import { columData, rowData, columWidthXp,leftColumWidthXp } from './gantt';
 defineProps<{ msg: string }>()
 
 // const rowsData = ref<RowDto[]>([])
@@ -21,7 +21,7 @@ const createCells = (rows: RowDto[]) => {
   })
 }
 onMounted(() => {
-  console.log('stations', tempdata.stations)
+  // console.log('stations', tempdata.stations)
   const station: RowDto[] = []
   tempdata.stations.forEach(x => {
     station.push({ code: x.code, name: x.name })
@@ -52,10 +52,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
 .first-cell {
   background-color: white;
-  width: 160px;
+  width: v-bind(leftColumWidthXp);
   flex-shrink: 0;
   border-right: 1px solid #D5D9DC;
   border-bottom: 1px solid #D5D9DC;
@@ -68,27 +67,29 @@ onMounted(() => {
   z-index: 1;
 }
 
-.gantt-row-head  {
+.gantt-row-head {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
 .gantt {
   position: relative;
 }
+
 .gantt-row {
   display: flex;
 }
+
 .gantt-row-body {
-  height: 60px;
+  min-height: 60px;
 }
 
 .gantt-cell {
-  width: 80px;
+  width: v-bind(columWidthXp);
   flex-shrink: 0;
   border-right: 1px solid #D5D9DC;
   border-bottom: 1px solid #D5D9DC;
   box-sizing: border-box;
-
 }
 </style>
