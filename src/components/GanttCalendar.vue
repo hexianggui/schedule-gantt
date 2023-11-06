@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { columData, columWidthXp, rightColumWidthXp } from './gantt'
+import { columData, columWidthPx, rightColumWidthPx } from './gantt'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-    console.log('rightCellWidthxp',rightColumWidthXp.value)
+    // console.log('columData',columData.value)
     // getAllDayData()
 })
 </script>
@@ -71,15 +71,15 @@ onMounted(() => {
     justify-content: center;
     height: 36px;
     border-right: 1px solid #D5D9DC;
-    border-bottom: 2px solid #9aa0a5;
+    /* border-bottom: 2px solid #9aa0a5; */
 }
 
 .gantt-cell {
-    width: v-bind(columWidthXp);
+    width: v-bind(columWidthPx);
 }
 
 .time-line-bottom-cell-last {
     border-right: none;
-    width: v-bind(rightColumWidthXp);
+    width: v-bind(rightColumWidthPx);
 }
 </style>
