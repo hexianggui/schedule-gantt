@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import { ref } from 'vue'
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import GanttCalendar from './GanttCalendar.vue';
 import { CellDto, ColumnDto, RowDto } from './gantt.model';
 import tempdata from './temData.json'
@@ -42,6 +42,8 @@ const createColDtoForTemp = () => {
   columData.value = _colums
   console.log('columData', columData.value)
 }
+const scrollLeft = ref(0)
+const scrollTop = ref(0)
 /**
  * 导入模版工位数据，并生成行数据
  */
@@ -66,6 +68,16 @@ const createRowDtoForTemp = () => {
 //   {
 //     height: '100%', width: '100%'
 //   })
+const scrollHandler = (e: any) => {
+  // console.log('scrollHandler', e.target.scrollTop, e.target.scrollLeft, e)
+  if (scrollLeft.value != e.target.scrollLeft) {
+    scrollLeft.value = e.target.scrollLeft
+  }
+  if (scrollTop.value != e.target.scrollTop) {
+    scrollTop.value = e.target.scrollTop
+  }
+
+}
 onMounted(() => {
   createColDtoForTemp();
   createRowDtoForTemp();
@@ -86,35 +98,21 @@ onMounted(() => {
 <template>
   <div style="width: 1300px;height: 900px;">
     <div class="gantt">
-      <!-- <div :style="{ width: columCount * columWidth + leftColumWidth + 'px' }">
-        <div class="gantt-row  gantt-row-head ">
-          <div class="first-cell title-cell first-row"> {{ '机台' }}</div>
-          <div class="first-row">
-            <TimeLine></TimeLine>
-          </div>
-        </div>
-        <div class="gantt-row gantt-row-body" v-for="(row, index) in rowData" :key="index">
-          <div class="first-cell">{{ row.name }}</div>
-          <div class="gantt-cell" v-for="(cell, index2) in row.cells" :key="index2" :id="cell.rowCode + cell.startValue">
-          </div>
-        </div>
-      </div> -->
       <div class="gantt-left">
         <div class="gantt-left-head gantt-first-row">
           <div>{{ '机台' }}</div>
         </div>
-        <div class="gantt-left-list">
+        <div class="gantt-left-list" :scrollTop="scrollTop">
           <div class="gantt-left-list-item gantt-row" v-for="(row, index) in rowData" :key="index">
             <div class="gantt-left-list-item-cell">{{ row.name }}</div>
           </div>
         </div>
       </div>
       <div class="gantt-right">
-        <!-- <GanttCalendar></GanttCalendar> -->
-        <div class="gantt-right-head gantt-first-row">
+        <div class="gantt-right-head gantt-first-row" :scrollLeft="scrollLeft">
           <GanttCalendar></GanttCalendar>
         </div>
-        <div class="gantt-table">
+        <div class="gantt-table" v-on:scroll="scrollHandler">
           <div class="gantt-grid" :style="{ width: columCount * columWidth + 'px' }">
             <div class="gantt-row" v-for="(row, index) in rowData" :key="index">
               <div class="gantt-cell" v-for="(cell, index2) in row.cells" :key="index2"
@@ -129,9 +127,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.gantt-left-list{
+.gantt-left-list {
   overflow: hidden;
 }
+
 .gantt-left {
   display: flex;
   flex-direction: column;
