@@ -9,17 +9,17 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="time-line" style="background-color: #F9FAFB;">
+    <div class="gantt-calendar" style="background-color: #F9FAFB;">
         <div v-for=" (day, index) in columData" :key="index">
-            <div class="time-line-big-cell-container">
-                <div class="time-line-top-cell">
-                    <span class="time-line-tile">{{ day.title }}</span>
+            <div class="gantt-calendar-big-cell-container">
+                <div class="gantt-calendar-top-cell">
+                    <span class="gantt-calendar-tile">{{ day.title }}</span>
                     &nbsp;
-                    <span class="time-line-subtile">{{ day.subTitle }}</span>
+                    <span class="gantt-calendar-subtile">{{ day.subTitle }}</span>
                 </div>
-                <div class="time-line-bottom-cell-container">
-                    <div class="time-line-bottom-cell gantt-cell" v-for="(cell, index2) in day.cells" :key="index2"
-                        :class="index2 + 1 == day.cells?.length ? 'time-line-bottom-cell-last' : ''">
+                <div class="gantt-calendar-bottom-cell-container">
+                    <div class="gantt-calendar-bottom-cell gantt-cell" v-for="(cell, index2) in day.cells" :key="index2"
+                        :class="index2 + 1 == day.cells?.length ? 'gantt-calendar-bottom-cell-last' : ''">
                         {{ cell.title }}
                     </div>
                 </div>
@@ -29,43 +29,43 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.time-line {
+.gantt-calendar {
     display: flex;
 }
 
-.time-line div {
+.gantt-calendar div {
     box-sizing: border-box;
     /* display: flex; */
 }
 
-.time-line-big-cell-container {
+.gantt-calendar-big-cell-container {
     border-right: 1px solid;
     box-sizing: border-box;
 }
 
-.time-line-top-cell {
+.gantt-calendar-top-cell {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30px;
 }
 
-.time-line-top-cell .time-line-tile {
+.gantt-calendar-top-cell .gantt-calendar-tile {
     font-size: large;
 }
 
-.time-line-top-cell .time-line-subtile {
+.gantt-calendar-top-cell .gantt-calendar-subtile {
     /* font-size: large; */
     color: #7C7A81;
 }
 
-.time-line-bottom-cell-container {
+.gantt-calendar-bottom-cell-container {
     display: flex;
     /* align-items: center;
     justify-content: center; */
 }
 
-.time-line-bottom-cell {
+.gantt-calendar-bottom-cell {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ onMounted(() => {
     width: v-bind(columWidthPx);
 }
 
-.time-line-bottom-cell-last {
+.gantt-calendar-bottom-cell-last {
     border-right: none;
     width: v-bind(rightColumWidthPx);
 }

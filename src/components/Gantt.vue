@@ -64,12 +64,8 @@ const createRowDtoForTemp = () => {
   })
   rowData.value = rows
 }
-// const windowsize = ref(
-//   {
-//     height: '100%', width: '100%'
-//   })
+
 const scrollHandler = (e: any) => {
-  // console.log('scrollHandler', e.target.scrollTop, e.target.scrollLeft, e)
   if (scrollLeft.value != e.target.scrollLeft) {
     scrollLeft.value = e.target.scrollLeft
   }
@@ -81,16 +77,6 @@ const scrollHandler = (e: any) => {
 onMounted(() => {
   createColDtoForTemp();
   createRowDtoForTemp();
-  // windowsize.value = {
-  //   height: window.innerHeight + 'px', width: window.innerWidth + 'px'
-  // }
-  // console.log('columCount', columCount.value, columWidth.value, leftColumWidth.value)
-  // console.log('columCount', window.innerHeight, window.innerWidth)
-  // window.addEventListener('scroll', (ev) => {
-  //   console.log('addEventListener', ev)
-  // })
-  // rows.value = sations
-
 })
 // const count = ref(0)
 </script>
@@ -127,6 +113,31 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.gantt-table::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background-color: transparent;
+}
+
+.gantt-table::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em; */
+}
+
+.gantt-table::-webkit-scrollbar-thumb {
+  background-color: rgb(147, 147, 153, 0.2);
+  /* -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em; */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+
 .gantt-left-list {
   overflow: hidden;
 }
